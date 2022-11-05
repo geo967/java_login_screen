@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/purple_200"
+    android:backgroundTintMode="add"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/create_account" />
+
+    <EditText
+        android:id="@+id/name_editText"
+        style="@style/text_color"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:autofillHints=""
+        android:hint="@string/name"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/date_picker_editText"
+            style="@style/text_color"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:autofillHints=""
+            android:hint="@string/select_dob"
+            android:inputType="date"
+            android:onClick="openCalender" />
+
+        <TextView
+            android:id="@+id/age_textView"
+            style="@style/text_color"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/age" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/text_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/sex" />
+
+        <Spinner
+            android:id="@+id/sex_spinner"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/mail_editText"
+        style="@style/text_color"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:hint="@string/e_mail"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/mobile_no_editText"
+        style="@style/text_color"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:autofillHints=""
+        android:hint="@string/mobile_number"
+        android:inputType="number" />
+
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_of_button"
+        android:onClick="saveData"
+        android:text="@string/submit" />
+
+</LinearLayout>

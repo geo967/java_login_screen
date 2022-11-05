@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4B8580"
+    android:id="@+id/relative_layout"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/google_image"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:contentDescription="@string/app_logo"
+        android:src="@drawable/google_image" />
+
+    <EditText
+        android:id="@+id/username_editText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/google_image"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:autofillHints="userName"
+        android:background="@drawable/shape_of_edittext"
+        android:cursorVisible="true"
+        android:hint="@string/enter_your_username"
+        android:inputType="text"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:textColor="#EDFFFEFF" />
+
+    <EditText
+        android:id="@+id/password_editText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/username_editText"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints="password"
+        android:background="@drawable/shape_of_edittext"
+        android:hint="@string/enter_your_password"
+        android:inputType="numberPassword"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:textColor="#F6EEF2" />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_editText"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_of_button"
+        android:text="@string/login"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/forgot_password"
+        android:layout_width="wrap_content"
+        android:textColor="#C31221"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/forgot_password"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/Create_Account"
+        android:textColor="#C31221"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forgot_password"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/create_new_account"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/forgot_password_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_call_24"
+        android:layout_toEndOf="@id/forgot_password"
+        android:layout_below="@id/login_button"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="@string/will_go_to_new_activity" />
+
+    <ImageButton
+        android:id="@+id/create_account_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_action_name_send"
+        android:layout_toEndOf="@id/Create_Account"
+        android:layout_below="@id/forgot_password"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/will_go_to_new_activity" />
+
+</RelativeLayout>

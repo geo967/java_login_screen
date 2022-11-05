@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Activity - kotlin</string>
+    <string name="next_activity">Next Activity</string>
+    <string name="activity_2">Activity 2</string>
+    <string name="type_something">type something</string>
+    <string name="back">back</string>
+    <string name="enter_a_web_url">Enter a web url</string>
+    <string name="go_to_this_site">go to this site</string>
+    <string name="enter_a_number">enter a number</string>
+    <string name="google_map">google map</string>
+    <string name="go_to_dial_pad">go to dial pad</string>
+    <string name="enter_a_text_to_share">enter a text to share</string>
+    <string name="share_text">share text</string>
+</resources>

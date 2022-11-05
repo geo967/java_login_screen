@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">app1</string>
+    <string name="app_logo">app_logo</string>
+    <string name="enter_your_username">enter your username</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">forgot password</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="will_go_to_new_activity">will go to new activity</string>
+    <string name="submit">Submit</string>
+    <string name="create_account">Create Account</string>
+    <string name="mobile_number">Mobile number</string>
+    <string name="e_mail">e-mail</string>
+    <string name="sex">Sex</string>
+    <string name="age">Age</string>
+    <string name="select_dob">Select DOB</string>
+    <string name="name">Name</string>
+    <string name="image_for_view_pager">image for view pager</string>
+    <string name="image_layout_of_recyclerview">image layout of recyclerview</string>
+    <string name="go_to_cart">Go To Cart</string>
+</resources>
